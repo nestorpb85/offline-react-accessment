@@ -9,7 +9,7 @@ form {
     width: 100%;
 }
 
-p.InputRow { 
+div.InputRow { 
     display: table-row;
 }
 
@@ -22,16 +22,14 @@ label {
     display: table-cell;
 
     width: 95%;
-    padding-right: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .InputRow select {
     display: table-cell;
 
     width: 95%;
-    padding-right: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .ButtonRow {
@@ -47,6 +45,8 @@ label {
 }
 
 .ErrorMsg {
+    font-size: small;
     color: red;
-    margin: 2px;
+
+    margin-bottom: 4px;
 }

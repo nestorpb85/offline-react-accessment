@@ -64,20 +64,20 @@ function Form(props) {
     return (
         <div className="FormWrapper">
             <form className="Form" id="formId" onSubmit={onSubmit}>
-                <p className="InputRow">
+                <div className="InputRow">
                     <label htmlFor="name">Name</label>
                     <input type="text" id="name" name="name" required minLength="1" maxLength="100" size="20" onChange={onNameChange}/>
                     {!isNameValid && <div className="ErrorMsg">This name has already been taken</div>}
-                </p>
+                </div>
 
-                <p className="InputRow">
+                <div className="InputRow">
                     <label htmlFor="location">Location</label>
                     <select id="location" name="location" required>
                         {options.map((option, idx) => {
                             return (<option key={idx}>{option}</option>);
                         })}
                     </select>
-                </p>
+                </div>
             </form>
             <div className="ButtonRow">
                 <input type="reset" value="Clear" form="formId" onClick={onClear} />
