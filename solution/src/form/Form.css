@@ -1,0 +1,52 @@
+
+.FormWrapper {
+    padding: 8px;
+}
+
+/* use table row/cell layout to get the right alignment of the fields */
+form {
+    display: table;
+    width: 100%;
+}
+
+p.InputRow { 
+    display: table-row;
+}
+
+label {
+    display: table-cell;
+    padding-right: 8px;
+}
+
+.InputRow input {
+    display: table-cell;
+
+    width: 95%;
+    padding-right: 0px;
+    margin-bottom: 8px;
+}
+
+.InputRow select {
+    display: table-cell;
+
+    width: 95%;
+    padding-right: 0px;
+    margin-bottom: 8px;
+}
+
+.ButtonRow {
+    /* to align the buttons to the right */
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 4px;
+}
+
+.ButtonRow input {
+    margin: 4px;
+}
+
+.ErrorMsg {
+    color: red;
+    margin: 2px;
+}

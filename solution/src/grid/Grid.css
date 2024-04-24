@@ -1,0 +1,34 @@
+
+.GridWrapper {
+    padding: 8px;
+}
+
+.Table {
+    width: 100%;
+    border: 1px solid black;
+
+    /* remove space between cells to make vertical border look like a single line */
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+.TableHeader {
+    background-color: #cccccc;
+}
+
+.LightRow {
+    background-color:#ffffff;
+}
+
+.DarkRow {
+    background-color: #eeeeee;
+}
+
+/* to get left borders onlin in-between cells */
+table th + th { border-left:1px solid black; }
+table td + td { border-left:1px solid black; }
+
+/* for empty cells to take up space */
+td:empty::after{
+    content: "\00a0";
+  }
